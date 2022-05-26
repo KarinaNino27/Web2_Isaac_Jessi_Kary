@@ -9,9 +9,9 @@ namespace NorthwindClient.Controllers;
 public class NorthwindController : ControllerBase
 {
     NorthwindContext NWcontext;
-    private readonly ILogger<NorthwindController> _logger;
-    public NorthwindController(ILogger<NorthwindController> logger, NorthwindContext context){
-        _logger=logger;
+    
+    public NorthwindController( NorthwindContext context){
+
         NWcontext=context;
     }
 
